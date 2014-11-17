@@ -1,0 +1,41 @@
+var pseudoCorrect;
+
+pseudoCorrect = [
+  'foo.com/blah_blah',
+  'foo.com/blah_blah/',
+  'foo.com/blah_blah_(wikipedia)',
+  'foo.com/blah_blah_(wikipedia)_(again)',
+  'example.com/wpstyle/?p=364',
+  'example.com/foo/?bar=baz&inga=42&quux',
+  '✪df.ws/123',
+  'userid:password@example.com:8080',
+  'userid:password@example.com:8080/',
+  'userid@example.com',
+  'userid@example.com/',
+  'userid@example.com:8080',
+  'userid@example.com:8080/',
+  'userid:password@example.com',
+  'userid:password@example.com/',
+  '142.42.1.1/',
+  '142.42.1.1:8080/',
+  '➡.ws/䨹',
+  '⌘.ws',
+  '⌘.ws/',
+  'foo.com/blah_(wikipedia)#cite-1',
+  'foo.com/blah_(wikipedia)_blah#cite-1',
+  'foo.com/unicode_(✪)_in_parens',
+  'foo.com/(something)?after=parens',
+  '☺.damowmow.com/',
+  'code.google.com/events/#&product=browser',
+  'j.mp',
+  'foo.bar/?q=Test%20URL-encoded%20stuff',
+  'مثال.إختبار',
+  '例子.测试',
+  'उदाहरण.परीक्षा',
+  '-.~_!$&\'()*+,;=:%40:80%2f::::::@example.com',
+  '1337.net',
+  'a.b-c.de',
+  '223.255.255.254'
+];
+
+module.exports = pseudoCorrect;
