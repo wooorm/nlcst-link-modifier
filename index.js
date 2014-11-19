@@ -196,8 +196,6 @@ function mergeLinks(child, index, parent) {
 var linkPlugin;
 
 function attach(parser) {
-    var sentencePlugins;
-
     if (!parser || !parser.parse) {
         throw new Error(
             '`parser` is not a valid parser for ' +
@@ -214,11 +212,7 @@ function attach(parser) {
         linkPlugin = parser.constructor.plugin(mergeLinks);
     }
 
-    sentencePlugins = parser.tokenizeSentencePlugins;
-
-    if (sentencePlugins.indexOf(linkPlugin) === -1) {
-        parser.tokenizeSentencePlugins.unshift(linkPlugin);
-    }
+    parser.useFirst('tokenizeSentence', linkPlugin);
 }
 
 /**
