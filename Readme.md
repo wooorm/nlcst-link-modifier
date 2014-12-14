@@ -164,4 +164,4 @@ On a MacBook Air, **parse-english** performs about 2.5% slower on content filled
 
 ## License
 
-MIT © Titus Wormer
+MIT © [Titus Wormer](http://wooorm.com)
