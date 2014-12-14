@@ -25,7 +25,7 @@
     "components/",
     "coverage/",
     "node_modules/",
-    "test/"
+    "test/",
     "component.json",
     "package.json",
     "benchmark.js"
