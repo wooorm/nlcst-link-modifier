@@ -141,15 +141,16 @@ Yields:
 
 ## Performance
 
-On a MacBook Air, **parse-english** performs about 2.5% slower on content filled with links, and a 1.5% slower on content without links, when using this modifier.
+On a MacBook Air, **parse-english** performs about 8% slower on content filled with links, and a 7% slower on content without links, when using this modifier.
 
 ```
-  1,444 op/s » A paragraph (5 sentences, 100 words, 10 links)
-  2,160 op/s » A paragraph (5 sentences, 100 words, no links)
+             parse w/ modifier
+  1,554 op/s » A paragraph (5 sentences, 100 words, 10 links)
+  2,453 op/s » A paragraph (5 sentences, 100 words, no links)
 
              parse w/o modifier
-  1,484 op/s » A paragraph (5 sentences, 100 words, 10 links)
-  2,192 op/s » A paragraph (5 sentences, 100 words, no links)
+  1,702 op/s » A paragraph (5 sentences, 100 words, 10 links)
+  2,640 op/s » A paragraph (5 sentences, 100 words, no links)
 ```
 
 ## Related
